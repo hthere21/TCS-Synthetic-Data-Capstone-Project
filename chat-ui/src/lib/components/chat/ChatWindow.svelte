@@ -311,7 +311,7 @@
 						<!-- </div> -->
 
 						{#if messages && lastMessage && lastMessage.interrupted && !isReadOnly}
-							<div
+							<!-- <div
 								use:inview={options}
 								on:inview_change={(event) => {
 									const { inView, entry, scrollDirection, observer, node } = event.detail;
@@ -326,7 +326,7 @@
 									}
 									console.log("Btn ends");
 								}}
-							>
+							> -->
 								<ContinueBtn
 									on:click={() => {
 										console.log("Continue Btn click");
@@ -337,7 +337,7 @@
 										}
 									}}
 								/>
-							</div>
+							<!-- </div> -->
 						{/if}
 					</div>
 				{/if}
